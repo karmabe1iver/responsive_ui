@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 var appbarcolor = Colors.black;
 var drawercolor = Colors.grey.shade300;
-Widget DraweList = Column(
+Widget DraweList = SingleChildScrollView(child:Column(
   children: [
     DrawerHeader(
       child: Text('D A S H B O A R D '),
@@ -28,6 +28,7 @@ Widget DraweList = Column(
       title: Text('E X I T'),
     ),
   ],
+)
 );
 Widget Gridlist = Padding(
   padding: const EdgeInsets.all(8.0),
